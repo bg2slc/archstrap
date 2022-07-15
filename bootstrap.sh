@@ -15,7 +15,7 @@ mount /dev/vda2 /mnt
 mkdir /mnt/boot
 mount /dev/vda1 /mnt/boot
 swapon /dev/vda3
-Replying to @DusK_The_Stray: How late am I? just got here
+
 pacstrap /mnt base linux linux-firmware vi neovim awesome lightdm netctl grub
 
 arch-chroot /mnt
