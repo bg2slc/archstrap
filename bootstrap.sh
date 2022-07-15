@@ -25,7 +25,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ln -sf /usr/share/zoneinfo/Amercia/Toronto /etc/localtime
 hwclock --systohc
 
-nvim /etc/locale.gen
+nvim /etc/locale.gen &
 
 locale-gen
 
@@ -33,7 +33,7 @@ echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
 echo "daedalus" > /etc/hostname
 
-grub-install --target=i386-pc /dev/vda1
+grub-install --target=i386-pc /dev/vda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 echo "remember to create user useradd -m -G wheel USERNAME"
