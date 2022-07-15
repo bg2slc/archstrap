@@ -25,7 +25,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ln -sf /usr/share/zoneinfo/Amercia/Toronto /etc/localtime
 hwclock --systohc
 
-nvim /etc/locale.gen &
+nvim /etc/locale.gen &&
 
 locale-gen
 
